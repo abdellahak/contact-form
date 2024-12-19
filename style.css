@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif, 'arial';
+}
+body{
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background-color: #313840;
+}
+.wrapper h2{
+  font-size: 28px;
+  color: #888888;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 20px 30px; 
+  text-align: center;
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+form .dbl-field{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dbl-field .field{
+  /* height: 50px; */
+  width: calc(100% / 2 - 13px);
+  margin-top: 30px;
+}
+form .field input{
+  width : 300px;
+  margin-inline: 10px;
+}
+form .field input,
+form .message textarea{
+  height: 50px;
+
+  margin-top: 10px;
+  padding: 0 18px 0 10px;
+  border: none;
+  border-bottom: 1px solid #8a8a8a;
+  outline: none;
+  font-size: 16px;
+  background-color: #313840;
+  color: white;
+}
+form .field input::placeholder,
+form .message textarea::placeholder{
+  color: #8a8a8a;
+}
+form .message textarea{
+  min-width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+  resize: vertical;
+}
+form .field input:focus,
+form .message textarea:focus{
+  border-bottom: 2px solid #f9f9f9;
+}
+
+form .button-area{
+  margin: 25px 0px;
+}
+.button-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.button-area button{
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #888888;
+  color: #888888;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #313840;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.button-area span{
+  color: #888888;
+  margin-block: 20px;
+  display: block;
+}
+
+@media(max-width: 768px){
+  form .dbl-field{
+    flex-direction: column;
+  }
+  .dbl-field .field{
+    width: 100%;
+  }
+}
