@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif, 'arial';
+  font-family: "Poppins", sans-serif, "arial";
 }
-body{
+body {
   background: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -13,33 +13,33 @@ body{
   min-height: 100vh;
   background-color: #313840;
 }
-.wrapper h2{
+.wrapper h2 {
   font-size: 28px;
   color: #888888;
   margin-bottom: 20px;
   font-weight: 300;
-  padding: 20px 30px; 
+  padding: 20px 30px;
   text-align: center;
 }
-.wrapper form{
+.wrapper form {
   margin: 35px 30px;
 }
-form .dbl-field{
+form .dbl-field {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.dbl-field .field{
+.dbl-field .field {
   /* height: 50px; */
   width: calc(100% / 2 - 13px);
   margin-top: 30px;
 }
-form .field input{
-  width : 300px;
+form .field input {
+  width: 300px;
   margin-inline: 10px;
 }
 form .field input,
-form .message textarea{
+form .message textarea {
   height: 50px;
 
   margin-top: 10px;
@@ -52,30 +52,32 @@ form .message textarea{
   color: white;
 }
 form .field input::placeholder,
-form .message textarea::placeholder{
+form .message textarea::placeholder {
   color: #8a8a8a;
 }
-form .message textarea{
+form .message textarea {
   min-width: 100%;
   max-width: 100%;
   margin-top: 30px;
   resize: vertical;
 }
 form .field input:focus,
-form .message textarea:focus{
+form .message textarea:focus {
   border-bottom: 2px solid #f9f9f9;
 }
-
-form .button-area{
+.message {
+  padding: 10px;
+}
+form .button-area {
   margin: 25px 0px;
 }
-.button-area{
+.button-area {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.button-area button{
+.button-area button {
   width: 100%;
   padding: 20px;
   border: 1px solid #888888;
@@ -87,17 +89,17 @@ form .button-area{
   font-weight: 300;
   cursor: pointer;
 }
-.button-area span{
+.button-area span {
   color: #888888;
   margin-block: 20px;
   display: none;
 }
 
-@media(max-width: 768px){
-  form .dbl-field{
+@media (max-width: 768px) {
+  form .dbl-field {
     flex-direction: column;
   }
-  .dbl-field .field{
+  .dbl-field .field {
     width: 100%;
   }
 }
