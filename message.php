@@ -9,7 +9,7 @@ $message = $_POST['message'];
 
 if(!empty($email) && !empty($message)){
   if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-    $receiver = "codingnepalweb@gmail.com";
+    $receiver = "khoudenak@gmail.com";
     $subject = "From: $name <$email>";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $website\n\nMessage: $message\n\nRegards,\n$name";
     $sender = "From: $email";
