@@ -90,7 +90,7 @@ form .button-area{
 .button-area span{
   color: #888888;
   margin-block: 20px;
-  display: block;
+  display: none;
 }
 
 @media(max-width: 768px){

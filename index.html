@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Contact Form</title>
   </head>
   <body>
@@ -12,29 +12,48 @@
       <form action="#">
         <div class="dbl-field">
           <div class="field">
-            <input type="text" placeholder="Your Name (required)" required />
+            <input
+              type="text"
+              name="name1"
+              placeholder="Your Name (required)"
+            />
           </div>
           <div class="field">
-            <input type="text" placeholder="Enter your E-mail (required)" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your E-mail (required)"
+            />
           </div>
         </div>
         <div class="dbl-field">
           <div class="field">
-            <input type="text" placeholder="Enter your phone (optional)" required />
+            <input
+              type="phone"
+              name="phone"
+              placeholder="Enter your phone (optional)"
+            />
           </div>
           <div class="field">
-            <input type="email" placeholder="Enter your website (optional)" required />
+            <input
+              type="text"
+              name="website"
+              placeholder="Enter your website (optional)"
+            />
           </div>
         </div>
         <div class="message">
-          <textarea placeholder="Your Message"></textarea>
-
+          <textarea
+            placeholder="Your Message (required)"
+            name="message"
+          ></textarea>
         </div>
         <div class="button-area">
           <button type="submit">Send message</button>
-          <span>Sending your message...</span>
+          <span class="status-text">Sending your message...</span>
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
